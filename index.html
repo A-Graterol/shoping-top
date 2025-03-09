@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Virtual</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Logo de la tienda">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/about.html">Acerca de</a></li>
+                <li><a href="pages/contact.html">Contacto</a></li>
+                <li><a href="pages/policies.html">Políticas</a></li>
+                <li><a href="pages/faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Buscar productos...">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+        <div class="cart" id="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+            <div class="cart-dropdown" id="cart-dropdown">
+                <div class="cart-items"></div>
+                <button class="checkout-btn">Ir al Carrito</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Bienvenido a nuestra tienda virtual</h1>
+            <p>Encuentra los mejores productos aquí.</p>
+            <a href="#products" class="btn">Explorar Catálogo</a>
+        </section>
+        <section class="featured-product">
+            <div class="featured-content">
+                <img src="assets/images/productos/producto-destacado.jpg" alt="Producto Destacado">
+                <div class="featured-info">
+                    <h2>Producto Destacado</h2>
+                    <p class="featured-description">Este es un producto exclusivo que no te puedes perder. ¡Aprovecha la oferta!</p>
+                    <p class="featured-price">$99.99</p>
+                    <button class="btn">Comprar Ahora</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="products" id="products">
+            <h2>Nuestros Productos</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-category="all">Todos</button>
+                <button class="filter-btn" data-category="electronics">Electrónicos</button>
+                <button class="filter-btn" data-category="clothing">Ropa</button>
+                <button class="filter-btn" data-category="home">Hogar</button>
+            </div>
+            <div class="product-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <img src="assets/images/productos/producto1.jpg" alt="Producto 1" class="product-image">
+                    <h3>Producto 1</h3>
+                    <p class="price">$29.99</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                </div>
+                <!-- Producto 2 -->
+                <div class="product-card" data-category="clothing">
+                    <img src="assets/images/productos/producto2.jpg" alt="Producto 2" class="product-image">
+                    <h3>Producto 2</h3>
+                    <p class="price">$49.99</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                </div>
+                <!-- Producto 3 -->
+                <div class="product-card" data-category="home">
+                    <img src="assets/images/productos/producto3.jpg" alt="Producto 3" class="product-image">
+                    <h3>Producto 3</h3>
+                    <p class="price">$19.99</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                </div>
+                <!-- Producto 4 -->
+                <div class="product-card" data-category="electronics">
+                    <img src="assets/images/productos/producto4.jpg" alt="Producto 4" class="product-image">
+                    <h3>Producto 4</h3>
+                    <p class="price">$39.99</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"¡Excelente servicio y productos de alta calidad! Definitivamente volveré a comprar."</p>
+                    <span>- Juan Pérez</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"La entrega fue rápida y el producto superó mis expectativas. ¡Recomendado!"</p>
+                    <span>- María Gómez</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Muy buena atención al cliente. Resolvieron todas mis dudas rápidamente."</p>
+                    <span>- Carlos López</span>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Tienda Virtual. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
